@@ -1,0 +1,68 @@
+/* mediosdepago html */
+
+.imagenesMedios {
+  width: $imagenesMedios/2;
+  height: $imagenesMedios/2;
+}
+
+.tituloMedios {
+  text-align: center;
+  font-size: 4.8rem;
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+
+.seccionprincipalmedios {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 1fr;
+  grid-template-areas: "c1 c2 c3";
+  justify-items: center;
+  align-items: center;
+  padding-bottom: 8rem;
+}
+
+.seccionprincipalmedios__carduno {
+  grid-area: c1;
+  justify-self: center;
+  align-self: center;
+  padding: 2rem;
+  background-color: antiquewhite;
+  width: 80%;
+  height: 100%;
+  display: grid;
+
+  h2 {
+    padding-bottom: 5rem;
+  }
+}
+
+.seccionprincipalmedios__carddos h2,
+.seccionprincipalmedios__cardtres h2 {
+  padding-bottom: 5rem;
+}
+
+.seccionprincipalmedios__carddos {
+  @extend .seccionprincipalmedios__carduno;
+  grid-area: c2;
+
+}
+
+.seccionprincipalmedios__cardtres {
+  @extend .seccionprincipalmedios__carduno;
+  grid-area: c3;
+
+}
+
+.seccionprincipalmedios__carduno img,
+.seccionprincipalmedios__carddos img,
+.seccionprincipalmedios__cardtres img {
+  justify-self: center;
+  align-self: center;
+}
+
+.seccionprincipalmedios div h2 {
+  font-size: 3.6rem;
+  text-align: center;
+}

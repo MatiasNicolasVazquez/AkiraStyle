@@ -1,0 +1,91 @@
+/* contactanos html */
+
+.tituloPrincipalContactanos {
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+}
+
+.formulario {
+  background-color: wheat;
+  width: 80rem;
+  margin: auto;
+  margin-bottom: 10rem;
+  border-radius: 2rem;
+  padding: 3rem;
+  border: solid 4px black;
+
+  h2 {
+    font-size: 3.8rem;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+}
+
+.formulario__nya {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.formulario__nya__nombre {
+  margin-right: 4rem;
+  height: 2.5rem;
+}
+
+.formulario__nya__apellido {
+  height: 2.5rem;
+}
+
+.formulario__email {
+  grid-area: email;
+  width: 30%;
+  margin-bottom: 0.5rem;
+  height: 2.5rem;
+}
+
+.formulario__consulta {
+  grid-area: consulta;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.formulario__enviar {
+  width: 10%;
+
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-0.3rem);
+    transition: all cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  &:active {
+    transform: translateY(0.3rem);
+  }
+}
+
+input:focus {
+  height: 4rem;
+}
+
+label {
+  font-size: 2rem;
+}
+
+.boton {
+  background-color: grey;
+  border-color: black;
+
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-0.5rem);
+    transition: all cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  &:active {
+    transform: translateY(0.5rem);
+  }
+}

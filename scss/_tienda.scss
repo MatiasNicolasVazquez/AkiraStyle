@@ -1,0 +1,55 @@
+/* tienda html */
+
+.bodyTienda {
+  background-color: rgb(216, 216, 162);
+}
+
+.tituloTienda {
+  font-size: 4.8rem;
+  text-align: center;
+  padding-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.tienda__container__titulosTienda {
+  font-size: 4rem;
+  padding-bottom: 1.5rem;
+}
+
+.tienda {
+  display: flex;
+  padding: 10%;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 0rem;
+
+  .tienda__container {
+    width: 33.33%;
+    height: 100%;
+    align-content: center;
+    justify-content: space-evenly;
+    margin-bottom: 10%;
+    text-align: center;
+    border: solid 0.2rem rgb(0, 0, 0);
+    background-color: white;
+    padding: 6rem;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+
+  .tienda__container:hover{
+   transform: scale(1.2);
+  }
+
+
+  img {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  div p {
+    font-size: 2rem;
+    padding-top: 1.5rem;
+  }
+}

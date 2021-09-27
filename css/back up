@@ -1,0 +1,775 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    /* etiqueta raíz */
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* index */
+body {
+    background-color: rgb(255, 255, 184);
+}
+
+/* header */
+header {
+    background-color: beige;
+    display: flex;
+    align-items: center;
+    height: 10rem;
+
+
+}
+
+header div {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+header nav {
+    width: 70%;
+}
+ 
+
+.logo {
+    width: 10rem;
+
+}
+
+
+nav ul {
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+a {
+    text-decoration: none
+}
+
+li {
+    list-style-type: none;
+}
+
+nav ul li:hover {
+    background-color: rgb(248, 248, 198);
+
+}
+nav ul li a {
+    color: black;
+}
+
+.containerCarrusel{
+    width: 40rem;
+    height: 30rem;
+    margin-bottom: 10rem;
+}
+
+.carrusel{
+    width: 100%;
+}
+
+
+
+/* seccion principal */
+.seccionUnoIndex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+
+}
+
+.tituloPrincipalInicio {
+    font-size: 4.8rem;
+    color: black;
+    padding: 2rem;
+
+}
+
+.textoPrincipal {
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.imagenPrincipalInicio {
+
+    width: 40rem;
+    height: 40rem;
+    padding: 2rem;
+
+
+}
+
+
+
+/* seccion 2 */
+.seccionDosIndex {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "uno dos tres";
+    justify-items: center;
+    align-items: center;
+    padding: 4rem;
+
+}
+
+.seccionDosIndex h2 {
+    font-size: 2.8rem;
+    text-align: center;
+    padding-bottom: 2.5rem;
+
+
+}
+
+/* primera columna seccion 2 */
+
+.primeraColunmaSeccionDosIndex {
+    grid-area: uno;
+    padding: 1rem;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    background-color: white;
+    margin: 2rem;
+    height: 100%;
+
+
+}
+
+
+.imagenHistoria {
+    width: 20rem;
+    text-align: center;
+
+}
+
+/* segunda columna seccion 2 */
+
+.segundaColunmaSeccionDosIndex {
+    grid-area: dos;
+    padding: 1rem;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    background-color: white;
+    margin: 2rem;
+    height: 100%;
+}
+
+.segundaColunmaSeccionDosIndex h2 {
+    padding-bottom: 6rem;
+}
+
+.tarjeta {
+    width: 20rem;
+}
+
+/* tercera columna seccion 2 */
+
+.terceraColunmaSeccionDosIndex {
+
+    grid-area: tres;
+    padding: 1rem;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    background-color: white;
+    margin: 2rem;
+    height: 100%;
+
+}
+
+.terceraColunmaSeccionDosIndex h2 {
+    padding-bottom: 4rem;
+
+}
+
+.telefono {
+    width: 20rem;
+}
+
+
+/* footer */
+footer {
+    background-color: lightgray;
+    display: flex;
+    height: 7rem;
+}
+
+footer p {
+    display: flex;
+    width: 30%;
+    font-size: 1.6rem;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-bottom: 1rem;
+}
+
+footer ul {
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.twitterLogo {
+    width: 3.2rem;
+    height: 3.2rem;
+}
+
+.instagramLogo:hover{
+    background-color: pink;
+}
+
+.facebookLogo:hover{
+    background-color: blue;
+}
+.whatsappLogo:hover{
+    background-color: green;
+}
+.twitterLogo:hover{
+    background-color: rgb(2, 132, 141);
+}
+
+/* Nosotros html */
+
+.seccionNos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "foto texto";
+    justify-items: center;
+    align-items: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 8rem;
+}
+
+.seccionNos img {
+    grid-area: foto;
+}
+
+.textoNos {
+    background-color: wheat;
+    grid-area: texto;
+    display: grid;
+    width: 100%;
+    height: 80%;
+    padding: 4rem;
+    border: solid 0.2rem rgb(202, 170, 110);
+
+}
+
+.textoNos h1 {
+    justify-self: center;
+    align-self: center;
+    padding-bottom: 1rem;
+    font-size: 4.8rem;
+}
+
+.textoNos p {
+    font-size: 2rem;
+    align-self: center;
+    justify-self: center;
+    padding: 2.0rem;
+}
+
+
+
+.imagenNosotros {
+    width: 40rem;
+    height: 40rem;
+}
+
+.tituloNosotros {
+    font-size: 3.2rem;
+}
+
+.textoNosotros {
+    font-size: 1.6rem;
+}
+
+/* tienda html */
+.bodyTienda {
+    background-color: rgb(216, 216, 162);
+}
+
+.tituloTienda {
+    font-size: 4.8rem;
+    text-align: center;
+    padding-top: 10rem;
+}
+
+.titulosTienda {
+    font-size: 4rem;
+    padding-bottom: 1.5rem;
+}
+
+.tienda {
+    display: flex;
+    padding: 10%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 0rem;
+}
+
+.tienda div {
+    width: 33.33%;
+    height: 100%;
+    align-content: center;
+    justify-content: space-evenly;
+    margin-bottom: 10%;
+    text-align: center;
+    border: solid 0.2rem rgb(0, 0, 0);
+    background-color: white;
+    padding: 6rem;
+
+}
+
+
+.tienda img {
+    width: 26rem;
+    height: 26rem;
+}
+
+
+.tienda div p {
+    font-size: 2rem;
+    padding-top: 1.5rem;
+}
+
+/* contactanos html */
+.tituloPrincipalContactanos {
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+}
+
+.formulario {
+    background-color: wheat;
+    width: 80rem;
+    margin: auto;
+    margin-bottom: 10rem;
+    border-radius: 0.4rem;
+    padding: 3rem;
+}
+
+.formulario h2 {
+    font-size: 3.8rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.nya {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.nombre {
+    margin-right: 4rem;
+    height: 2.5rem;
+
+}
+
+.apellido {
+    height: 2.5rem;
+}
+
+.email {
+    grid-area: email;
+    width: 30%;
+    margin-bottom: 0.5rem;
+    height: 2.5rem;
+}
+
+.consulta {
+    grid-area: consulta;
+    width: 100%;
+    margin-bottom: 0.5rem;
+
+}
+
+.enviar {
+    width: 10%;
+}
+
+.enviar:hover {
+    cursor: pointer;
+    transform: translateY(-0.3rem);
+    transition: all cubic-bezier(0.215, 0.610, 0.355, 1)
+}
+
+.enviar:active {
+    transform: translateY(0.3rem)
+}
+
+.inputs:focus {
+    height: 4rem;
+}
+
+/* mediosdepago html */
+.imagenesMedios {
+
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.tituloMedios {
+    text-align: center;
+    font-size: 4.8rem;
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+}
+
+.bodyMedios {
+    background-color: rgb(255, 255, 184);
+}
+
+.seccionPrincipalMedios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 1fr;
+    grid-template-areas: "c1 c2 c3";
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 8rem;
+}
+
+.c1 {
+    grid-area: c1;
+    justify-self: center;
+    align-self: center;
+    padding: 2rem;
+    background-color: antiquewhite;
+    width: 80%;
+    height: 100%;
+    display: grid;
+}
+
+
+.c1 h2,
+.c2 h2,
+.c3 h2 {
+    padding-bottom: 5rem;
+}
+
+.c2 {
+    grid-area: c2;
+    justify-self: center;
+    align-self: center;
+    padding: 2rem;
+    background-color: antiquewhite;
+    width: 80%;
+    height: 100%;
+    display: grid;
+}
+
+.c3 {
+    grid-area: c3;
+    justify-self: center;
+    align-self: center;
+    padding: 2rem;
+    background-color: antiquewhite;
+    width: 80%;
+    height: 100%;
+    display: grid;
+}
+
+.c1 img,
+.c2 img,
+.c3 img {
+    justify-self: center;
+    align-self: center;
+}
+
+
+.seccionPrincipalMedios div h2 {
+    font-size: 3.6rem;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+
+    nav ul {
+        font-size: 1.6rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+
+    header nav {
+        width: 70%;
+    }
+
+    .seccionDosIndex {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "uno dos"
+            "tres tres";
+        grid-column-gap: 1fr;
+        grid-row-gap: 1fr;
+
+        justify-items: center;
+        align-items: center;
+        padding: 4rem;
+
+    }
+
+    .seccionDosIndex h2 {
+        font-size: 1.8rem;
+        text-align: center;
+        padding-bottom: 2.5rem;
+
+    }
+
+    /* primera columna seccion 2 */
+
+    .primeraColunmaSeccionDosIndex {
+        grid-area: uno;
+        padding: 1rem;
+        justify-items: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        background-color: white;
+        margin: 2rem;
+        margin-bottom: 6rem;
+
+
+    }
+
+
+    .imagenHistoria {
+        width: 18rem;
+        text-align: center;
+
+    }
+
+    .segundaColunmaSeccionDosIndex {
+        grid-area: dos;
+        padding: 1rem;
+        justify-items: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        background-color: white;
+        margin: 2rem;
+        margin-bottom: 6rem;
+    }
+
+
+    .tarjeta {
+        width: 18rem;
+        text-align: center;
+
+    }
+
+    .terceraColunmaSeccionDosIndex {
+        grid-area: tres;
+        padding: 1rem;
+        justify-items: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        background-color: white;
+        margin: 2rem;
+    }
+
+    .telefono {
+        width: 18rem;
+        text-align: center;
+    }
+
+    .footer {
+        background-color: lightblue;
+        display: flex;
+        height: 7rem;
+    }
+
+    footer ul {
+        width: 70%;
+    }
+
+    footer p {
+        font-size: 1.6rem;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+
+    nav ul a {
+        font-size: 1.4rem;
+    }
+
+    header nav {
+        width: 70%;
+    }
+
+    .tituloPrincipalInicio {
+        font-size: 3rem;
+        color: black;
+        padding: 2rem;
+
+    }
+
+    .textoPrincipal {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .imagenPrincipalInicio {
+
+        width: 30rem;
+        height: 20rem;
+        padding: 2rem;
+
+
+    }
+
+
+    .seccionDosIndex {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "uno"
+            "dos"
+            "tres";
+        justify-items: center;
+        align-items: center;
+        padding: 2rem;
+
+    }
+
+    .seccionDosIndex h2 {
+        font-size: 2rem;
+        text-align: center;
+        padding-bottom: 2.5rem;
+
+    }
+
+    /* primera columna seccion 2 */
+
+    .primeraColunmaSeccionDosIndex {
+        grid-area: uno;
+        padding: 1rem;
+        justify-items: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        background-color: white;
+        padding-bottom: 2rem;
+        width: 100%;
+    }
+
+
+    .imagenHistoria {
+        width: 14rem;
+        text-align: center;
+
+    }
+
+    .segundaColunmaSeccionDosIndex {
+        grid-area: dos;
+        padding: 1rem;
+        justify-items: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        background-color: white;
+        width: 100%;
+    }
+
+
+    .tarjeta {
+        width: 14rem;
+        text-align: center;
+
+    }
+
+    .terceraColunmaSeccionDosIndex {
+        grid-area: tres;
+        padding: 1rem;
+        justify-items: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        background-color: white;
+        width: 100%;
+
+    }
+
+    .terceraColunmaSeccionDosIndex h2 {
+        padding-bottom: 5rem;
+    }
+
+    .telefono {
+        width: 14rem;
+        text-align: center;
+    }
+
+    .footer {
+        background-color: lightblue;
+        display: flex;
+        height: 7rem;
+    }
+
+    footer ul {
+        width: 70%;
+    }
+
+    footer p {
+        font-size: 1.4rem;
+    }
+
+
+}
