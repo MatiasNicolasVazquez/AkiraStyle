@@ -18,6 +18,7 @@ header {
   background-color: beige;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 10rem;
 
   div {
@@ -58,6 +59,7 @@ nav ul li {
 
   a {
     color: black;
+    text-transform: uppercase;
   }
 }
 
