@@ -1,9 +1,4 @@
 /* tienda html */
-
-.bodyTienda {
-  background-color: rgb(216, 216, 162);
-}
-
 .tituloTienda {
   font-size: 4.8rem;
   text-align: center;
@@ -17,39 +12,44 @@
 }
 
 .tienda {
-  display: flex;
-  padding: 10%;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "a b c""d e f";
+  justify-items: center;
   align-items: center;
-  flex-wrap: wrap;
-  padding-bottom: 0rem;
-
-  .tienda__container {
-    width: 33.33%;
-    height: 100%;
-    align-content: center;
-    justify-content: space-evenly;
-    margin-bottom: 10%;
-    text-align: center;
-    border: solid 0.2rem rgb(0, 0, 0);
-    background-color: white;
-    padding: 6rem;
-    cursor: pointer;
-    transition: all 0.5s;
-  }
-
-  .tienda__container:hover{
-   transform: scale(1.2);
-  }
-
-
-  img {
-    width: 20rem;
-    height: 20rem;
-  }
-
-  div p {
-    font-size: 2rem;
-    padding-top: 1.5rem;
-  }
+  margin: 3rem;
 }
+
+.t1 {
+  grid-area: a;
+  height: 100%;
+  padding: 1rem;
+  margin: 2rem;
+}
+
+.t2 {
+  @extend .t1;
+  grid-area: b;
+}
+
+.t3 {
+  @extend .t1;
+  grid-area: c;
+}
+
+.t4 {
+  @extend .t1;
+  grid-area: d;
+}
+
+.t5 {
+  @extend .t1;
+  grid-area: e;
+}
+.t6 {
+  @extend .t1;
+  grid-area: f;
+}
+
+

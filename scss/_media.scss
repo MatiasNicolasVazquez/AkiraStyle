@@ -1,122 +1,159 @@
 @media (max-width: 768px) {
-  nav ul {
-    font-size: 1.6rem;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  .listaNavegador{
+    position: fixed;
+    width: 100vw;
+    height: calc(100% - 10rem);
+    background-color: #FBF1EE;
+    top: -100vh;
+    text-align: center;
+    transition: all 0.4s;
+    flex-direction: column;
+  }
+  .listaNavegador li{
+    margin: 5rem 0 0 0;
+    line-height: 3rem;
+
+    &:hover{
+background-color: none;
+    }
+  }
+  
+  .listaNavegador li a{
+    font-size: 2rem;
+    color:#454D5E;
   }
 
-  header nav {
-    width: 70%;
+  .btn_menu{
+    display: inline-flex;
+}
+  .seccionunoindex{
+    margin-top:50rem;
   }
+
+  .seccionunoindex__container{
+    width:50rem;
+    margin-top: 5rem;
+  }
+
+  /* index*/
+
 
   .seccionDosIndex {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "uno dos""tres tres";
-    grid-column-gap: 1fr;
-    grid-row-gap: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "uno""dos""tres";
     justify-items: center;
     align-items: center;
-    padding: 4rem;
-
-    h2 {
-      font-size: 1.8rem;
-      text-align: center;
-      padding-bottom: 2.5rem;
-    }
+    padding: 2rem;
   }
 
-  /* primera columna seccion 2 */
-
-  .primeraColunmaSeccionDosIndex {
+  .secciondosindex__colunmnauno {
     grid-area: uno;
     padding: 1rem;
-    justify-items: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    background-color: white;
     margin: 2rem;
     margin-bottom: 6rem;
+    width:80%;
   }
 
-  .imagenHistoria {
-    width: 18rem;
-    text-align: center;
-  }
-
-  .segundaColunmaSeccionDosIndex {
+  .secciondosindex__colunmnados {
     grid-area: dos;
     padding: 1rem;
-    justify-items: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    background-color: white;
     margin: 2rem;
     margin-bottom: 6rem;
+    width:80%;
   }
 
-  .tarjeta {
-    width: 18rem;
-    text-align: center;
-  }
+  
 
-  .terceraColunmaSeccionDosIndex {
+  .secciondosindex__colunmnatres {
     grid-area: tres;
     padding: 1rem;
-    justify-items: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    background-color: white;
     margin: 2rem;
+    width:80%;
   }
 
-  .telefono {
-    width: 18rem;
-    text-align: center;
-  }
+  
 
-  .footer {
-    background-color: lightblue;
-    display: flex;
-    height: 7rem;
-  }
+ 
 
-  footer {
-    ul {
-      width: 70%;
-    }
-
-    p {
+  footer p {
       font-size: 1.6rem;
-    }
+    
   }
+
+/* Nosotros html */
+
+.seccionnos{
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "foto" "texto";
+}
+
+.seccionnos__imagennosotros{
+  margin-bottom: 5rem;
+}
+
+
+
+.seccionnos__container__titulonosotros{
+  font-size: 4rem;
+}
+
+.seccionnos__container__textonosotros {
+  font-size: 1.6rem;
+}
+
+/*Contactanos*/
+
+.formulario{
+  width: 50rem;
+}
+
+.tituloPrincipalContactanos{
+  font-size: 2.4rem;
+}
+
+/*Medios de pago*/
+
+
+.seccionprincipalmedios{
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "c1""c2""c3"
+
+}
+.seccionprincipalmedios__carduno{
+  width:70%;
+}
+.tituloMedios{
+  font-size: 3rem;
+}
+
+/* tienda */
+.tienda{
+grid-template-columns: 1fr 1fr ;
+grid-template-rows: 1fr 1fr 1fr;
+grid-template-areas: "a b ""c d " "e f";
+}
+
+
+
+
+
+.footer__texto{
+  font-size: 1.3rem;
+}
+
 }
 
 @media (max-width: 600px) {
-  nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
-    a {
+  nav ul a {
       font-size: 1.4rem;
-    }
+    
   }
 
-  header nav {
-    width: 70%;
-  }
+ 
 
   .tituloPrincipalInicio {
     font-size: 3rem;
@@ -151,80 +188,86 @@
     }
   }
 
-  /* primera columna seccion 2 */
-
-  .primeraColunmaSeccionDosIndex {
+  .secciondosindex__colunmnauno {
     grid-area: uno;
     padding: 1rem;
-    justify-items: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    background-color: white;
     padding-bottom: 2rem;
     width: 100%;
   }
 
-  .imagenHistoria {
-    width: 14rem;
-    text-align: center;
-  }
+  
 
-  .segundaColunmaSeccionDosIndex {
+  .secciondosindex__colunmnados {
     grid-area: dos;
     padding: 1rem;
-    justify-items: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    background-color: white;
     width: 100%;
   }
 
-  .tarjeta {
-    width: 14rem;
-    text-align: center;
-  }
+  
 
-  .terceraColunmaSeccionDosIndex {
+  .secciondosindex__colunmnatres {
     grid-area: tres;
     padding: 1rem;
-    justify-items: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    background-color: white;
     width: 100%;
-
-    h2 {
-      padding-bottom: 5rem;
-    }
   }
 
-  .telefono {
-    width: 14rem;
-    text-align: center;
+       /*Nosotros */
+
+
+.seccionnos__imagennosotros{
+ margin-bottom: 5rem;
+ }   
+.seccionnos__container__titulonosotros{
+  font-size: 4rem;
+  }
+  
+  .seccionnos__container {
+    font-size: 1.6rem;
   }
 
-  .footer {
-    background-color: lightblue;
-    display: flex;
-    height: 7rem;
-  }
+/*Contactanos*/
 
-  footer {
-    ul {
-      width: 70%;
-    }
+.formulario{
+  width: 40rem;
+}
 
-    p {
-      font-size: 1.4rem;
-    }
-  }
+.tituloPrincipalContactanos{
+  font-size: 2rem;
+}
+
+/*Medios de pago*/
+
+
+.seccionprincipalmedios{
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "c1""c2""c3"
+
+}
+
+
+.tituloMedios{
+  font-size: 2.8rem;
+}
+
+.seccionprincipalmedios__carduno{
+  width:60%;
+}
+
+
+/* tienda */
+.tienda{
+grid-template-columns: 1fr ;
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-template-areas: "a" "b" "c" "d" "e" "f";
+}
+
+.t1, .t2, .t3, .t4, .t5, .t5{
+width:70%;
+}
+/* footer */
+
+.footer__texto{
+  font-size: 1rem;
+}
 }

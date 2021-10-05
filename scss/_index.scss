@@ -18,6 +18,7 @@
   justify-content: center;
   align-items: center;
   padding: 2rem;
+  margin-top:10rem;
 }
 
 .seccionunoindex__titulo {
@@ -29,7 +30,7 @@
 .seccionunoindex__container{
   background-color: wheat;
   border-radius: 2rem;
-  border: solid 4px black;
+  border: solid 0.4rem black;
   width:100rem;
   display:flex;
   justify-content: center;
@@ -50,20 +51,75 @@
 
 /* seccion 2 */
 
-.secciondosindex {
+.seccionDosIndex {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns:repeat(3,1fr);
   grid-template-rows: 1fr;
   grid-template-areas: "uno dos tres";
   justify-items: center;
   align-items: center;
-  padding: 4rem;
+  margin: 3rem;
+}
 
-  h2 {
-    font-size: 2.8rem;
-    text-align: center;
-    padding-bottom: 2.5rem;
+/* cards*/
+
+.contenedor{
+  width: 100%;
+  display: flex;
+  max-width: 110rem;
+}
+
+.card{
+  width: 100%;
+  margin: 2rem;
+  border-radius: 0.6rem;
+  overflow:hidden;
+  background-color: rgb(229, 210, 229);
+  box-shadow: 0rem 0.1rem 1rem rgba( 0,0,0,0.2);
+  cursor:default;
+  transition: all 400ms ease;
+
+  &:hover{
+    box-shadow: 0.5rem 0.5rem 2rem rgba( 0,0,0,0.4);
+    transform: translateY(-3%)
   }
+  
+  img{
+    width: 100%;
+   
+  }
+
+ .contenido{
+   padding: 1.5rem;
+   text-align: center;
+   background-color: #fff;
+
+   p{
+    
+     font-size: 1.4rem;
+   }
+   h3{
+     margin-top: 1rem;
+     margin-bottom: 1.5rem;
+     font-size: 2.4rem;
+   }
+   a{
+     background-color: black;
+     border:0.1rem solid grey;
+     font-size: 1.2rem;
+     display: inline-block;
+     margin-top: 1rem;
+     padding:1rem;
+     transition: all 400ms ease;
+     border-radius: 0.6rem;
+   }
+  }
+
+}
+
+.imagenesIndex{
+  padding: 2rem;
+  
 }
 
 /* primera columna seccion 2 */
@@ -71,20 +127,8 @@
 .secciondosindex__colunmnauno {
   grid-area: uno;
   padding: 1rem;
-  justify-items: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-items: center;
-  background-color: white;
   margin: 2rem;
   height: 100%;
-}
-
-.secciondosindex__colunmnauno__imagen {
-  width: $imagenesIndex;
-  text-align: center;
 }
 
 /* segunda columna seccion 2 */
@@ -92,23 +136,8 @@
 .secciondosindex__colunmnados {
   grid-area: dos;
   padding: 1rem;
-  justify-items: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-items: center;
-  background-color: white;
   margin: 2rem;
   height: 100%;
-
-  h2 {
-    padding-bottom: 6rem;
-  }
-}
-
-.secciondosindex__colunmnados__imagen {
-  width: $imagenesIndex;
 }
 
 /* tercera columna seccion 2 */
@@ -116,21 +145,7 @@
 .secciondosindex__colunmnatres {
   grid-area: tres;
   padding: 1rem;
-  justify-items: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-items: center;
-  background-color: white;
   margin: 2rem;
   height: 100%;
-
-  h2 {
-    padding-bottom: 4rem;
-  }
 }
 
-.secciondosindex__colunmnatres__imagen {
-  width: $imagenesIndex;
-}
