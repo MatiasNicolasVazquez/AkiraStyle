@@ -1,6 +1,7 @@
 @media (max-width: 768px) {
   .listaNavegador{
-    position: fixed;
+    position: absolute;
+    z-index: 1000;
     width: 100vw;
     height: calc(100% - 10rem);
     background-color: #FBF1EE;
@@ -26,10 +27,7 @@ background-color: none;
   .btn_menu{
     display: inline-flex;
 }
-  .seccionunoindex{
-    margin-top:50rem;
-  }
-
+ 
   .seccionunoindex__container{
     width:50rem;
     margin-top: 5rem;

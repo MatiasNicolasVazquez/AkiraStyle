@@ -662,7 +662,8 @@ label {
 
 @media (max-width: 768px) {
   .listaNavegador {
-    position: fixed;
+    position: absolute;
+    z-index: 1000;
     width: 100vw;
     height: calc(100% - 10rem);
     background-color: #FBF1EE;
@@ -690,9 +691,6 @@ label {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
-  }
-  .seccionunoindex {
-    margin-top: 50rem;
   }
   .seccionunoindex__container {
     width: 50rem;
