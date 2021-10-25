@@ -10,12 +10,31 @@
   <link rel="stylesheet" href="../css/estilos.css">
   <script src="https://kit.fontawesome.com/a8f1ee0169.js" crossorigin="anonymous"></script>
   <script src="../app.js" defer></script>
+  <style>
+    .containerError {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 6rem 5rem;
+    }
+
+    .containerError h1 {
+      margin-bottom: 2rem;
+      font-size: 4rem;
+    }
+
+    .containerError p {
+      font-size: 2rem;
+      margin-top: 2rem;
+      text-align: center;
+    }
+  </style>
   <title>Error 404 - Akira Style</title>
 </head>
 
 <body>
   <header>
-
     <nav>
       <a href="../index.html"> <img src="../imagenes/Akira.jpeg" alt="logo Akira Style" class="logo"></a>
       <ul class="listaNavegador" id="otroModo">
@@ -29,7 +48,6 @@
         <i class="fas fa-bars"></i>
       </span>
     </nav>
-
   </header>
 
   <section class="containerError">
@@ -37,28 +55,12 @@
     <img src="../imagenes/error.jpg" alt="error 404">
     <p>La página que usted busca no se encuentra disponible. Por favor, utilize este boton para <a href="../index.html">
         volver al inicio</a>.</p>
-
-
   </section>
 
   <footer class="footer">
-    <p class="footer__texto">Akira Style todos los derechos reservados.</p>
-    <ul class="footer__lista">
-
-      <li><a href="https://instagram.com/design_akira?utm_medium=copy_link"><img src="../imagenes/instagram.png"
-            alt="Instagram logo" class="footer__lista__instagram"></a></li>
-      <!--Imagen de Instagram-->
-      <li><a href=""><img src="../imagenes/twitter.png" alt="Twitter logo" class="footer__lista__twitter"></a>
-      </li>
-      <!--Imagen de Twitter-->
-      <li><a href=""><img src="../imagenes/facebook.png" alt="Facebook logo" class="footer__lista__facebook"></a>
-      </li>
-      <!--Imagen de Facebook-->
-      <li><a href=""><img src="../imagenes/whatsapp.png" alt="Whatsapp logo" class="footer__lista__whatsapp"></a>
-      </li>
-      <!--Imagen de WhatsApp-->
-    </ul>
-
+    <p class="footer__texto">Akira Style - 2021. Todos los derechos reservados.</p>
+    <a href="https://instagram.com/design_akira?utm_medium=copy_link"><img src="../imagenes/instagram.png"
+        alt="Instagram logo" class="footer__lista__instagram"></a>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"

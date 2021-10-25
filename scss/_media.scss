@@ -1,5 +1,5 @@
 @media (max-width: 768px) {
-  .listaNavegador{
+  .listaNavegador {
     position: absolute;
     z-index: 1000;
     width: 100vw;
@@ -10,26 +10,27 @@
     transition: all 0.4s;
     flex-direction: column;
   }
-  .listaNavegador li{
+
+  .listaNavegador li {
     margin: 5rem 0 0 0;
     line-height: 3rem;
 
-    &:hover{
-background-color: none;
+    &:hover {
+      background-color: none;
     }
   }
-  
-  .listaNavegador li a{
+
+  .listaNavegador li a {
     font-size: 2rem;
-    color:#454D5E;
+    color: #454D5E;
   }
 
-  .btn_menu{
+  .btn_menu {
     display: inline-flex;
-}
- 
-  .seccionunoindex__container{
-    width:50rem;
+  }
+
+  .seccionunoindex__container {
+    width: 50rem;
     margin-top: 5rem;
   }
 
@@ -51,7 +52,7 @@ background-color: none;
     padding: 1rem;
     margin: 2rem;
     margin-bottom: 6rem;
-    width:80%;
+    width: 80%;
   }
 
   .secciondosindex__colunmnados {
@@ -59,99 +60,91 @@ background-color: none;
     padding: 1rem;
     margin: 2rem;
     margin-bottom: 6rem;
-    width:80%;
+    width: 80%;
   }
 
-  
+
 
   .secciondosindex__colunmnatres {
     grid-area: tres;
     padding: 1rem;
     margin: 2rem;
-    width:80%;
+    width: 80%;
   }
-
-  
-
- 
 
   footer p {
-      font-size: 1.6rem;
-    
+    font-size: 1.6rem;
+
   }
 
-/* Nosotros html */
+  /* Nosotros html */
 
-.seccionnos{
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "foto" "texto";
-}
+  .seccionnos {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "foto""texto";
+  }
 
-.seccionnos__imagennosotros{
-  margin-bottom: 5rem;
-}
+  .seccionnos__imagennosotros {
+    margin-bottom: 5rem;
+  }
 
+  .seccionnos__container__titulonosotros {
+    font-size: 4rem;
+  }
 
+  .seccionnos__container__textonosotros {
+    font-size: 1.6rem;
+  }
 
-.seccionnos__container__titulonosotros{
-  font-size: 4rem;
-}
+  /*Contactanos*/
 
-.seccionnos__container__textonosotros {
-  font-size: 1.6rem;
-}
+  .formulario {
+    width: 50rem;
+  }
 
-/*Contactanos*/
+  .tituloPrincipalContactanos {
+    font-size: 2.4rem;
+  }
 
-.formulario{
-  width: 50rem;
-}
-
-.tituloPrincipalContactanos{
-  font-size: 2.4rem;
-}
-
-/*Medios de pago*/
+  /*Medios de pago*/
 
 
-.seccionprincipalmedios{
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "c1""c2""c3"
+  .seccionprincipalmedios {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "c1""c2""c3"
 
-}
-.seccionprincipalmedios__carduno{
-  width:70%;
-}
-.tituloMedios{
-  font-size: 3rem;
-}
+  }
 
-/* tienda */
-.tienda{
-grid-template-columns: 1fr 1fr ;
-grid-template-rows: 1fr 1fr 1fr;
-grid-template-areas: "a b ""c d " "e f";
-}
+  .seccionprincipalmedios__carduno {
+    width: 70%;
+  }
 
+  .tituloMedios {
+    font-size: 3rem;
+  }
 
+  /* tienda */
+  .tienda {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "a b ""c d ""e f";
+  }
 
-
-
-.footer__texto{
-  font-size: 1.3rem;
-}
+  .footer__texto {
+    font-size: 1.3rem;
+  }
 
 }
 
 @media (max-width: 600px) {
   nav ul a {
-      font-size: 1.4rem;
-    
+    font-size: 1.4rem;
+
   }
 
- 
+
 
   .tituloPrincipalInicio {
     font-size: 3rem;
@@ -193,7 +186,7 @@ grid-template-areas: "a b ""c d " "e f";
     width: 100%;
   }
 
-  
+
 
   .secciondosindex__colunmnados {
     grid-area: dos;
@@ -201,7 +194,7 @@ grid-template-areas: "a b ""c d " "e f";
     width: 100%;
   }
 
-  
+
 
   .secciondosindex__colunmnatres {
     grid-area: tres;
@@ -209,63 +202,63 @@ grid-template-areas: "a b ""c d " "e f";
     width: 100%;
   }
 
-       /*Nosotros */
+  /*Nosotros */
 
-
-.seccionnos__imagennosotros{
- margin-bottom: 5rem;
- }   
-.seccionnos__container__titulonosotros{
-  font-size: 4rem;
+  .seccionnos__imagennosotros {
+    margin-bottom: 5rem;
   }
-  
+
+  .seccionnos__container__titulonosotros {
+    font-size: 4rem;
+  }
+
   .seccionnos__container {
     font-size: 1.6rem;
   }
 
-/*Contactanos*/
+  /*Contactanos*/
+  .formulario {
+    width: 40rem;
+  }
 
-.formulario{
-  width: 40rem;
-}
+  .tituloPrincipalContactanos {
+    font-size: 2rem;
+  }
 
-.tituloPrincipalContactanos{
-  font-size: 2rem;
-}
+  /*Medios de pago*/
+  .seccionprincipalmedios {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "c1""c2""c3"
+  }
 
-/*Medios de pago*/
+  .tituloMedios {
+    font-size: 2.8rem;
+  }
 
+  .seccionprincipalmedios__carduno {
+    width: 60%;
+  }
 
-.seccionprincipalmedios{
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "c1""c2""c3"
+  /* tienda */
+  .tienda {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "a""b""c""d""e""f";
+  }
 
-}
+  .t1,
+  .t2,
+  .t3,
+  .t4,
+  .t5,
+  .t5 {
+    width: 70%;
+  }
 
+  /* footer */
 
-.tituloMedios{
-  font-size: 2.8rem;
-}
-
-.seccionprincipalmedios__carduno{
-  width:60%;
-}
-
-
-/* tienda */
-.tienda{
-grid-template-columns: 1fr ;
-grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-grid-template-areas: "a" "b" "c" "d" "e" "f";
-}
-
-.t1, .t2, .t3, .t4, .t5, .t5{
-width:70%;
-}
-/* footer */
-
-.footer__texto{
-  font-size: 1rem;
-}
+  .footer__texto {
+    font-size: 1rem;
+  }
 }
